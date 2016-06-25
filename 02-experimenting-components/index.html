@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="../node_modules/angular-material/angular-material.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body ng-app="NgMaterialModule" layout="row" ng-cloak>
+<!--
+
+
+<md-sidenav layout="column" class="sidenav1" md-is-locked-open='true'>
+    SideNav
+</md-sidenav>
+
+<md-content flex layout="column">
+    <ng-view>
+        View Content
+    </ng-view>
+</md-content>
+-->
+<!--
+
+<md-autocomplete md-selected-item="selectedItem" md-search-text="searchText" md-items="item in getMatches(searchText)" md-item-text="item.display">
+    <span md-highlight-text="searchText">{{item.display}}</span>
+</md-autocomplete>
+-->
+
+<!--<md-autocomplete md-selected-item="selectedItem" md-search-text="searchText" md-items="item in getMatches(searchText)" md-item-text="item.display">
+    <md-item-template>
+        <span md-highlight-text="searchText">{{item.display}}</span>
+    </md-item-template>
+    <md-not-found>
+        No matches found.
+    </md-not-found>
+</md-autocomplete>-->
+
+<!--
+
+<form name="autocompleteForm">
+    <md-autocomplete required md-input-name="autocomplete" md-selected-item="selectedItem" md-search-text="searchText" md-items="item in getMatches(searchText)" md-item-text="item.display">
+        <md-item-template>
+            <span md-highlight-text="searchText">{{item.display}}</span>
+        </md-item-template>
+        <div ng-messages="autocompleteForm.autocomplete.$error">
+            <div ng-message="required">This field is required</div>
+        </div>
+    </md-autocomplete>
+
+    <md-button> Flat Button</md-button>
+    <md-button href="http://google.com"> Flat link</md-button>
+    <md-button class="md-raised"> Raised Button</md-button>
+    <md-button ng-disabled="true"> Disabled Button</md-button>
+    <md-button>
+        <md-icon md-svg-src="your/icon.svg"></md-icon>
+        Register Now
+    </md-button>
+
+
+    <md-button class="md-fab" aria-label="FAB">
+        <md-icon md-svg-src="your/icon.svg"></md-icon>
+    </md-button>
+    &lt;!&ndash; mini-FAB &ndash;&gt;
+    <md-button class="md-fab md-mini" aria-label="Mini FAB">
+        <md-icon md-svg-src="your/icon.svg"></md-icon>
+    </md-button>
+    &lt;!&ndash; Button with SVG Icon &ndash;&gt;
+    <md-button class="md-icon-button" aria-label="Custom Icon Button">
+        <md-icon md-svg-icon="path/to/your.svg"></md-icon>
+    </md-button>
+</form>
+-->
+
+<br/>
+
+<div layout="column">
+    <md-autocomplete required md-input-name="autocomplete" md-selected-item="selectedItem" md-search-text="searchText" md-items="item in getMatches(searchText)" md-item-text="item.display">
+        <md-item-template>
+            <span md-highlight-text="searchText">{{item.display}}</span>
+        </md-item-template>
+        <div ng-messages="autocompleteForm.autocomplete.$error">
+            <div ng-message="required">This field is required</div>
+        </div>
+    </md-autocomplete>
+
+    <md-button> Flat Button</md-button>
+    <md-button href="http://google.com"> Flat link</md-button>
+    <md-button class="md-raised"> Raised Button</md-button>
+    <md-button ng-disabled="true"> Disabled Button</md-button>
+    <md-button>
+        <md-icon md-svg-src="your/icon.svg"></md-icon>
+        Register Now
+    </md-button>
+
+
+    <md-button class="md-fab" aria-label="FAB">
+        <md-icon md-svg-src="your/icon.svg"></md-icon>
+    </md-button>
+    <!-- mini-FAB -->
+    <md-button class="md-fab md-mini" aria-label="Mini FAB">
+        <md-icon md-svg-src="your/icon.svg"></md-icon>
+    </md-button>
+    <!-- Button with SVG Icon -->
+    <md-button class="md-icon-button" aria-label="Custom Icon Button">
+        <md-icon md-svg-icon="path/to/your.svg"></md-icon>
+    </md-button>
+</div>
+
+
+<script src="../node_modules/angular/angular.min.js"></script>
+<script src="../node_modules/angular-animate/angular-animate.min.js"></script>
+<script src="../node_modules/angular-aria/angular-aria.min.js"></script>
+<script src="../node_modules/angular-messages/angular-messages.min.js"></script>
+
+<!-- Angular Material Library -->
+<script src="../node_modules/angular-material/angular-material.min.js"></script>
+<script src="app.js"></script>
+
+<!-- Your application bootstrap  -->
+<script type="text/javascript">
+    /**
+     * You must include the dependency on 'ngMaterial'
+     */
+    angular.module('NgMaterialModule', ['ngMaterial']);
+</script>
+
+</body>
+</html>
