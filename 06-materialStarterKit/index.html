@@ -10,20 +10,59 @@
 
 <body ng-app="NgMaterialModule">
 <!-- Start - Application HTML Content -->
+<!--
 <div layout="column" ng-controller="appController" class="md-no-animations" ng-cloak>
 
     <md-toolbar layout="row" md-whiteframe="4">
         <img src="http://www.hirez.io/assets/images/img-a54f296192d3d9e18d999e0f68e00d06.png">
-
         <div flex></div>
-
         <md-button>About</md-button>
         <md-button>Courses</md-button>
         <md-button ng-click="showLogin();">Login</md-button>
-
     </md-toolbar>
 
 </div>
+-->
+
+<!--
+<div layout="column" class="zero">
+    <div flex="33" flex-md="{{ vm.box1Width }}" class="one">  Test Box</div>
+    <div flex="33" layout="{{ vm.direction }}" layout-md="row" class="two">
+        <div flex="20" flex-md="10" hide-lg class="two_one"> Two One Box</div>
+        <div flex="30px" show hide-md="{{ vm.hideBox }}" flex-md="25" class="two_two"> two_two</div>
+        <div flex="20" flex-md="65" class="two_three"> two_three Box</div>
+    </div>
+    <div flex class="three">Three Box</div>
+</div>
+-->
+
+
+<!--<div>
+    <div layout="row">
+        <div flex>First item in row</div>
+        <div flex="20">Second item in row</div>
+    </div>
+    <div layout="column">
+        <div flex="66">First item in column</div>
+        <div flex="33">Second item in column</div>
+    </div>
+</div>-->
+
+
+<!--<div>
+    <div class="ng-scope layout-row">
+        <div class="flex">First item in row</div>
+        <div class="flex-20">Second item in row</div>
+    </div>
+    <div class="ng-scope layout-column">
+        <div class="flex-33">First item in column</div>
+        <div class="flex-66">Second item in column</div>
+    </div>
+</div>-->
+
+
+
+
 
 <!-- End - Application HTML Content -->
 <script src="../node_modules/angular/angular.min.js"></script>
@@ -44,5 +83,5 @@
 </script>
 <script src="app.js"></script>
 
-</div>
+</body>
 </html>
